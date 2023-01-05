@@ -23,6 +23,7 @@ urls.add_NewUrl(root_url)
 
 #以写入模式打开一个文件 
 fout=open("craw_all_page","w")
+n=0
 while urls.hasnewurl():
     print("hello")
     cururl=urls.geturl()
@@ -31,7 +32,7 @@ while urls.hasnewurl():
     if r.status_code!=200:
         print("error,return code is not 200",cururl)
         continue    
-
+    #r.text里面就是要进行解析的html文本
     soup=BeautifulSoup(r.text,"html.parser")
     #获得文本的标题
     title=soup.title.string
@@ -39,6 +40,13 @@ while urls.hasnewurl():
     fout.write("%s\t%s\n"%(cururl,title))
     #刷盘
     fout.flush()
+    filename="./"+title+".html"
+    if n==0:
+        
+        with open(filename,"w") as fw:
+            fw.write(r.text)
+
+    n+=1
     print(f"success {cururl} {title}")
     # fout.write(f"{cururl}  {title}")
     #在这个下面查找所有的链接
@@ -53,7 +61,7 @@ while urls.hasnewurl():
             #字符串匹配，就添加进去
             print(href)
             urls.add_NewUrl(href)
-            
+
             print(urls.size())
             print("add")
     

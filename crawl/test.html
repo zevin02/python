@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>蚂蚁学Python &#8211; 你有没有为写代码拼过命？那你知不知道 人生苦短，我用Python？</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//www.crazyant.net' />
+<link rel='dns-prefetch' href='//cdn.bibblio.org' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="蚂蚁学Python &raquo; Feed" href="http://www.crazyant.net/feed" />
+<link rel="alternate" type="application/rss+xml" title="蚂蚁学Python &raquo; 评论Feed" href="http://www.crazyant.net/comments/feed" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.crazyant.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<!-- crazyant.net is managing ads with Advanced Ads – https://wpadvancedads.com/ --><script id="crazy-ready">
+			window.advanced_ads_ready=function(e,a){a=a||"complete";var d=function(e){return"interactive"===a?"loading"!==e:"complete"===e};d(document.readyState)?e():document.addEventListener("readystatechange",(function(a){d(a.target.readyState)&&e()}),{once:"interactive"===a})},window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[];		</script>
+		<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='xena-fonts-css' href='//fonts.googleapis.com/css?family=Open+Sans%3Aregular%2C600%2C700&#038;ver=1.0.6' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='http://www.crazyant.net/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='http://www.crazyant.net/wp-includes/css/classic-themes.min.css?ver=1' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='bibblio_related_posts-css' href='http://www.crazyant.net/wp-content/plugins/bibblio-related-posts/public/css/bibblio_related_posts-public.css?ver=1.3.7' media='all' />
+<link rel='stylesheet' id='bibblio-rcm-css-css' href='//cdn.bibblio.org/rcm/4.6/bib-related-content.css?ver=6.1.1' media='all' />
+<link rel='stylesheet' id='my-style-css' href='http://www.crazyant.net/wp-content/plugins/cardoza-3d-tag-cloud//public/css/cardoza3dtagcloud.css?ver=6.1.1' media='all' />
+<link rel='stylesheet' id='toc-screen-css' href='http://www.crazyant.net/wp-content/plugins/table-of-contents-plus/screen.min.css?ver=2212' media='all' />
+<style id='md-style-inline-css'>
+ 
+</style>
+<link rel='stylesheet' id='wordpress-popular-posts-css-css' href='http://www.crazyant.net/wp-content/plugins/wordpress-popular-posts/assets/css/wpp.css?ver=6.1.1' media='all' />
+<link rel='stylesheet' id='xena-style-css' href='http://www.crazyant.net/wp-content/themes/xena/style.min.css?ver=1.0.6' media='all' />
+<style id='xena-style-inline-css'>
+a, a:visited{color:#af6e96;}a:hover, a:focus, a:active{color:#683f57;}body .grid-container{max-width:1400px;}.wp-block-group__inner-container{max-width:1400px;margin-left:auto;margin-right:auto;}body, button, input, select, textarea{font-family:"Open Sans", sans-serif;}body{line-height:2;}.entry-content > [class*="wp-block-"]:not(:last-child){margin-bottom:1.5em;}.main-navigation .main-nav ul ul li a{font-size:14px;}@media (max-width:768px){.main-title{font-size:30px;}h1{font-size:34px;}h2{font-size:32px;}}.top-bar{background-color:rgba(175,110,150,0.1);}.main-title a,.main-title a:hover,.main-title a:visited{color:#444444;}.main-navigation .main-nav ul li a,.menu-toggle{color:#444444;}.main-navigation .main-nav ul li:hover > a,.main-navigation .main-nav ul li:focus > a, .main-navigation .main-nav ul li.sfHover > a{color:#af6e96;}button.menu-toggle:hover,button.menu-toggle:focus,.main-navigation .mobile-bar-items a,.main-navigation .mobile-bar-items a:hover,.main-navigation .mobile-bar-items a:focus{color:#444444;}.main-navigation .main-nav ul li[class*="current-menu-"] > a{color:#af6e96;}.navigation-search input[type="search"],.navigation-search input[type="search"]:active, .navigation-search input[type="search"]:focus, .main-navigation .main-nav ul li.search-item.active > a{color:#444444;}.main-navigation ul ul{background-color:#ffffff;}.entry-title a,.entry-title a:visited{color:#444444;}.entry-title a:hover{color:#444444;}.entry-meta{color:#595959;}h1{color:#444444;}h2{color:#444444;}h3{color:#444444;}h4{color:#444444;}h5{color:#444444;}h6{color:#444444;}.sidebar .widget .widget-title{color:#444444;}.footer-widgets{background-color:rgba(175,110,150,0.1);}.footer-widgets a,.footer-widgets a:visited{color:#af6e96;}.footer-widgets a:hover{color:#683f57;}.footer-widgets .widget-title{color:#444444;}.site-info{color:#444444;}.site-info a,.site-info a:visited{color:#af6e96;}.site-info a:hover{color:#683f57;}.footer-bar .widget_nav_menu .current-menu-item a{color:#683f57;}input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="number"]:focus,textarea:focus,select:focus{border-color:#af6e96;}button,
+html input[type="button"],input[type="reset"],
+input[type="submit"],a.button,a.button:visited{color:#ffffff;background-color:#af6e96;}button:hover,
+html input[type="button"]:hover,input[type="reset"]:hover,
+input[type="submit"]:hover,a.button:hover{color:#ffffff;background-color:#683f57;}.xena-back-to-top,.xena-back-to-top:visited{background-color:rgba( 0,0,0,0 );color:#444444;}.xena-back-to-top:hover,.xena-back-to-top:focus{background-color:rgba( 0,0,0,0 );}.xena-icon.icon-tags svg,.xena-icon.icon-categories svg,.xena-icon.icon-comments svg{fill:#af6e96;}hr.xena-divider{background-color:rgba(175,110,150,0.25);}.woocommerce div.product p.price,.woocommerce div.product span.price,
+        .woocommerce div.product .stock,
+        .woocommerce ul.products li.product .price{color:#444444;}.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{color:#ffffff;font-weight:normal;background-color:#af6e96;border-radius:0px;line-height:2;}.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover{color:#ffffff;background-color:#683f57;}.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{color:#ffffff;font-weight:normal;background-color:#af6e96;border-radius:0px;line-height:2;}.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover{color:#ffffff;background-color:#683f57;}.woocommerce #content table.cart td.actions .input-text, .woocommerce table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text{padding:10px 20px;width:10em;}.woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, .woocommerce #respond input#submit:disabled[disabled], .woocommerce a.button.disabled, .woocommerce a.button:disabled, .woocommerce a.button:disabled[disabled], .woocommerce button.button.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce input.button.disabled, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled]{background-color:#af6e96;color:#ffffff;width:200px;}.no-sidebar .entry-content .alignfull{margin-left:calc(-100vw / 2 + 100% / 2);margin-right:calc(-100vw / 2 + 100% / 2);}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-40px;width:calc(100% + 80px);max-width:calc(100% + 80px);}.container.grid-container{max-width:1480px;}.rtl .menu-item-has-children .dropdown-menu-toggle{padding-left:20px;}.rtl .main-navigation .main-nav ul li.menu-item-has-children > a{padding-right:20px;}@media (max-width:768px){.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-header, .wp-block-group__inner-container{padding:30px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-30px;width:calc(100% + 60px);max-width:calc(100% + 60px);}}.one-container .sidebar .widget{padding:0px;}/* End cached CSS */@media (max-width:768px){.main-navigation .menu-toggle,.main-navigation .mobile-bar-items,.sidebar-nav-mobile:not(#sticky-placeholder){display:block;}.main-navigation ul,.gen-sidebar-nav{display:none;}[class*="nav-float-"] .site-header .inside-header > *{float:none;clear:both;}}button.menu-toggle:before,.search-item a:before,.dropdown-menu-toggle:before,.cat-links:before,.tags-links:before,.comments-link:before,.nav-previous .prev:before,.nav-next .next:before,.xena-back-to-top:before {display: none;}
+</style>
+<link rel='stylesheet' id='fancybox-css' href='http://www.crazyant.net/wp-content/plugins/easy-fancybox/fancybox/1.5.4/jquery.fancybox.min.css?ver=6.1.1' media='screen' />
+<link rel='stylesheet' id='prism-css-0-css' href='http://www.crazyant.net/wp-content/plugins/wp-githuber-md/assets/vendor/prism/themes/prism.min.css?ver=1.23.0' media='all' />
+<script src='http://www.crazyant.net/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
+<script src='http://www.crazyant.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script src='http://www.crazyant.net/wp-content/plugins/bibblio-related-posts/public/js/bibblio_related_posts-public.js?ver=1.3.7' id='bibblio_related_posts-js'></script>
+<script src='http://www.crazyant.net/wp-content/plugins/cardoza-3d-tag-cloud/jquery.tagcanvas.min.js?ver=6.1.1' id='tag_handle-js'></script>
+<script id='wpp-json' type="application/json">
+{"sampling_active":0,"sampling_rate":100,"ajax_url":"http:\/\/www.crazyant.net\/wp-json\/wordpress-popular-posts\/v1\/popular-posts","api_url":"http:\/\/www.crazyant.net\/wp-json\/wordpress-popular-posts","ID":0,"token":"c876f27f89","lang":0,"debug":0}
+</script>
+<script src='http://www.crazyant.net/wp-content/plugins/wordpress-popular-posts/assets/js/wpp.min.js?ver=6.1.1' id='wpp-js-js'></script>
+<link rel="https://api.w.org/" href="http://www.crazyant.net/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.crazyant.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.crazyant.net/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1.1" />
+	<script type="text/javascript">
+		$j = jQuery.noConflict();
+		$j(document).ready(function() {
+			if(!$j('#myCanvas').tagcanvas({
+				textColour: '#333333',
+				outlineColour: '#ffffff',
+				reverse: true,
+				depth: 0.8,
+				textFont: null,
+				weight: true,
+				maxSpeed: 0.05
+			},'tags')) {
+				$j('#myCanvasContainer').hide();
+			}
+		});
+	</script>
+	            <style id="wpp-loading-animation-styles">@-webkit-keyframes bgslide{from{background-position-x:0}to{background-position-x:-200%}}@keyframes bgslide{from{background-position-x:0}to{background-position-x:-200%}}.wpp-widget-placeholder,.wpp-widget-block-placeholder{margin:0 auto;width:60px;height:3px;background:#dd3737;background:linear-gradient(90deg,#dd3737 0%,#571313 10%,#dd3737 100%);background-size:200% auto;border-radius:3px;-webkit-animation:bgslide 1s infinite linear;animation:bgslide 1s infinite linear}</style>
+            <meta name="viewport" content="width=device-width, initial-scale=1">	<!-- Fonts Plugin CSS - https://fontsplugin.com/ -->
+	<style>
+			</style>
+	<!-- Fonts Plugin CSS -->
+	</head>
+
+<body class="home blog wp-embed-responsive right-sidebar nav-float-right fluid-header one-container active-footer-widgets-3 header-aligned-left dropdown-hover xena post-image-aligned-left post-image-below-header aa-prefix-crazy-" itemtype="https://schema.org/Blog" itemscope>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>		<header id="masthead" class="site-header" itemtype="https://schema.org/WPHeader" itemscope>
+			<div class="inside-header grid-container grid-parent">
+				<div class="site-branding">
+					<h1 class="main-title" itemprop="headline">
+				<a href="http://www.crazyant.net/" rel="home">
+					蚂蚁学Python
+				</a>
+			</h1>
+					<p class="site-description" itemprop="description">你有没有为写代码拼过命？那你知不知道 人生苦短，我用Python？</p>
+				</div>		<nav id="site-navigation" class="main-navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+			<div class="inside-navigation grid-container grid-parent">
+								<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<span class="xena-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+					</svg><svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+					</svg></span><span class="mobile-menu">Menu</span>				</button>
+				<div id="primary-menu" class="main-nav"><ul id="menu-%e5%af%bc%e8%88%aa%e6%a0%8f" class=" menu sf-menu"><li id="menu-item-2328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2328"><a href="http://www.crazyant.net/%e5%85%b3%e4%ba%8e">关于我</a></li>
+</ul></div>			</div><!-- .inside-navigation -->
+		</nav><!-- #site-navigation -->
+					</div><!-- .inside-header -->
+		</header><!-- #masthead -->
+		
+<div id="page" class="hfeed site grid-container container grid-parent">
+		<div id="content" class="site-content">
+
+	<div id="primary" class="content-area grid-parent mobile-grid-100 grid-75 tablet-grid-75">
+		<main id="main" class="site-main">
+			<article id="post-3013" class="post-3013 post type-post status-publish format-standard hentry category-flask" itemtype="https://schema.org/CreativeWork" itemscope>
+	<div class="inside-article">
+		
+		<header class="entry-header">
+					<div class="entry-meta">
+
+			<span class="cat-links"><span class="xena-icon icon-categories"><svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0 1 43.592 27.907l12.349 26.791A16 16 0 0 0 228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z" fill-rule="nonzero"/>
+					</svg></span><span class="screen-reader-text">Categories </span><a href="http://www.crazyant.net/category/flask" rel="category tag">flask</a></span> 		</div>
+		<h2 class="entry-title" itemprop="headline"><a href="http://www.crazyant.net/3013.html" rel="bookmark">Vscode怎样配置，实现Flask服务的启动和调试</a></h2>			<div class="entry-meta">
+				<span class="posted-on"><a href="http://www.crazyant.net/3013.html" title="上午 3:49" rel="bookmark"><time class="entry-date published" datetime="2023-01-05T03:49:21+00:00" itemprop="datePublished">2023-01-05</time></a></span> <span class="comments-link"><span class="xena-icon icon-comments"><svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M132.838 329.973a435.298 435.298 0 0 0 16.769-9.004c13.363-7.574 26.587-16.142 37.419-25.507 7.544.597 15.27.925 23.098.925 54.905 0 105.634-15.311 143.285-41.28 23.728-16.365 43.115-37.692 54.155-62.645 54.739 22.205 91.498 63.272 91.498 110.286 0 42.186-29.558 79.498-75.09 102.828 23.46 49.216 75.09 101.709 75.09 101.709s-115.837-38.35-154.424-78.46c-9.956 1.12-20.297 1.758-30.793 1.758-88.727 0-162.927-43.071-181.007-100.61z" fill-rule="nonzero"/>
+						<path d="M383.371 132.502c0 70.603-82.961 127.787-185.216 127.787-10.496 0-20.837-.639-30.793-1.757-38.587 40.093-154.424 78.429-154.424 78.429s51.63-52.472 75.09-101.67c-45.532-23.321-75.09-60.619-75.09-102.79C12.938 61.9 95.9 4.716 198.155 4.716 300.41 4.715 383.37 61.9 383.37 132.502z" fill-rule="nonzero" />
+					</svg></span><a href="http://www.crazyant.net/3013.html#respond">Leave a comment</a></span> <span class="byline">by <span class="author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope><a class="url fn n" href="http://www.crazyant.net/author/peishuai1987" title="View all posts by crazyant" rel="author" itemprop="url"><span class="author-name" itemprop="name">crazyant</span></a></span></span> 			</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		
+			<div class="entry-summary" itemprop="text">
+				<p>1. 编写代码 from flask import Flask app = Flask(&quot;hello &#8230; <a title="Vscode怎样配置，实现Flask服务的启动和调试" class="read-more" href="http://www.crazyant.net/3013.html">Read more <span class="screen-reader-text">Vscode怎样配置，实现Flask服务的启动和调试</span></a></p>
+			</div><!-- .entry-summary -->
+
+					<hr class="xena-divider">
+				</div><!-- .inside-article -->
+</article><!-- #post-## -->
+<article id="post-3002" class="post-3002 post type-post status-publish format-standard hentry category-django category-pandas" itemtype="https://schema.org/CreativeWork" itemscope>
+	<div class="inside-article">
+		
+		<header class="entry-header">
+					<div class="entry-meta">
+
+			<span class="cat-links"><span class="xena-icon icon-categories"><svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0 1 43.592 27.907l12.349 26.791A16 16 0 0 0 228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z" fill-rule="nonzero"/>
+					</svg></span><span class="screen-reader-text">Categories </span><a href="http://www.crazyant.net/category/django" rel="category tag">django</a>, <a href="http://www.crazyant.net/category/pandas" rel="category tag">pandas</a></span> 		</div>
+		<h2 class="entry-title" itemprop="headline"><a href="http://www.crazyant.net/3002.html" rel="bookmark">Django结合Pandas实现CSV文件下载</a></h2>			<div class="entry-meta">
+				<span class="posted-on"><a href="http://www.crazyant.net/3002.html" title="上午 8:39" rel="bookmark"><time class="updated" datetime="2022-12-26T08:39:59+00:00" itemprop="dateModified">2022-12-26</time><time class="entry-date published" datetime="2022-12-26T08:39:15+00:00" itemprop="datePublished">2022-12-26</time></a></span> <span class="comments-link"><span class="xena-icon icon-comments"><svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M132.838 329.973a435.298 435.298 0 0 0 16.769-9.004c13.363-7.574 26.587-16.142 37.419-25.507 7.544.597 15.27.925 23.098.925 54.905 0 105.634-15.311 143.285-41.28 23.728-16.365 43.115-37.692 54.155-62.645 54.739 22.205 91.498 63.272 91.498 110.286 0 42.186-29.558 79.498-75.09 102.828 23.46 49.216 75.09 101.709 75.09 101.709s-115.837-38.35-154.424-78.46c-9.956 1.12-20.297 1.758-30.793 1.758-88.727 0-162.927-43.071-181.007-100.61z" fill-rule="nonzero"/>
+						<path d="M383.371 132.502c0 70.603-82.961 127.787-185.216 127.787-10.496 0-20.837-.639-30.793-1.757-38.587 40.093-154.424 78.429-154.424 78.429s51.63-52.472 75.09-101.67c-45.532-23.321-75.09-60.619-75.09-102.79C12.938 61.9 95.9 4.716 198.155 4.716 300.41 4.715 383.37 61.9 383.37 132.502z" fill-rule="nonzero" />
+					</svg></span><a href="http://www.crazyant.net/3002.html#respond">Leave a comment</a></span> <span class="byline">by <span class="author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope><a class="url fn n" href="http://www.crazyant.net/author/peishuai1987" title="View all posts by crazyant" rel="author" itemprop="url"><span class="author-name" itemprop="name">crazyant</span></a></span></span> 			</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		
+			<div class="entry-summary" itemprop="text">
+				<p>1、前端增加下载按钮 &lt;a href=&quot;/dump_orders/&quot; class=&#038; &#8230; <a title="Django结合Pandas实现CSV文件下载" class="read-more" href="http://www.crazyant.net/3002.html">Read more <span class="screen-reader-text">Django结合Pandas实现CSV文件下载</span></a></p>
+			</div><!-- .entry-summary -->
+
+					<hr class="xena-divider">
+				</div><!-- .inside-article -->
+</article><!-- #post-## -->
+<article id="post-2998" class="post-2998 post type-post status-publish format-standard hentry category-pandas tag-pandas" itemtype="https://schema.org/CreativeWork" itemscope>
+	<div class="inside-article">
+		
+		<header class="entry-header">
+					<div class="entry-meta">
+
+			<span class="cat-links"><span class="xena-icon icon-categories"><svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0 1 43.592 27.907l12.349 26.791A16 16 0 0 0 228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z" fill-rule="nonzero"/>
+					</svg></span><span class="screen-reader-text">Categories </span><a href="http://www.crazyant.net/category/pandas" rel="category tag">pandas</a></span> 		</div>
+		<h2 class="entry-title" itemprop="headline"><a href="http://www.crazyant.net/2998.html" rel="bookmark">Pandas读取Excel是怎样指定列的类型为字符串</a></h2>			<div class="entry-meta">
+				<span class="posted-on"><a href="http://www.crazyant.net/2998.html" title="上午 9:56" rel="bookmark"><time class="updated" datetime="2022-12-09T09:57:14+00:00" itemprop="dateModified">2022-12-09</time><time class="entry-date published" datetime="2022-12-09T09:56:16+00:00" itemprop="datePublished">2022-12-09</time></a></span> <span class="comments-link"><span class="xena-icon icon-comments"><svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M132.838 329.973a435.298 435.298 0 0 0 16.769-9.004c13.363-7.574 26.587-16.142 37.419-25.507 7.544.597 15.27.925 23.098.925 54.905 0 105.634-15.311 143.285-41.28 23.728-16.365 43.115-37.692 54.155-62.645 54.739 22.205 91.498 63.272 91.498 110.286 0 42.186-29.558 79.498-75.09 102.828 23.46 49.216 75.09 101.709 75.09 101.709s-115.837-38.35-154.424-78.46c-9.956 1.12-20.297 1.758-30.793 1.758-88.727 0-162.927-43.071-181.007-100.61z" fill-rule="nonzero"/>
+						<path d="M383.371 132.502c0 70.603-82.961 127.787-185.216 127.787-10.496 0-20.837-.639-30.793-1.757-38.587 40.093-154.424 78.429-154.424 78.429s51.63-52.472 75.09-101.67c-45.532-23.321-75.09-60.619-75.09-102.79C12.938 61.9 95.9 4.716 198.155 4.716 300.41 4.715 383.37 61.9 383.37 132.502z" fill-rule="nonzero" />
+					</svg></span><a href="http://www.crazyant.net/2998.html#respond">Leave a comment</a></span> <span class="byline">by <span class="author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope><a class="url fn n" href="http://www.crazyant.net/author/peishuai1987" title="View all posts by crazyant" rel="author" itemprop="url"><span class="author-name" itemprop="name">crazyant</span></a></span></span> 			</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		
+			<div class="entry-summary" itemprop="text">
+				<p>问题 比如这样的一个dataframe names ages bob 05 tom 4 suzy 3 如果直接 &#8230; <a title="Pandas读取Excel是怎样指定列的类型为字符串" class="read-more" href="http://www.crazyant.net/2998.html">Read more <span class="screen-reader-text">Pandas读取Excel是怎样指定列的类型为字符串</span></a></p>
+			</div><!-- .entry-summary -->
+
+					<hr class="xena-divider">
+				</div><!-- .inside-article -->
+</article><!-- #post-## -->
+<article id="post-2990" class="post-2990 post type-post status-publish format-standard hentry category-django" itemtype="https://schema.org/CreativeWork" itemscope>
+	<div class="inside-article">
+		
+		<header class="entry-header">
+					<div class="entry-meta">
+
+			<span class="cat-links"><span class="xena-icon icon-categories"><svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0 1 43.592 27.907l12.349 26.791A16 16 0 0 0 228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z" fill-rule="nonzero"/>
+					</svg></span><span class="screen-reader-text">Categories </span><a href="http://www.crazyant.net/category/django" rel="category tag">django</a></span> 		</div>
+		<h2 class="entry-title" itemprop="headline"><a href="http://www.crazyant.net/2990.html" rel="bookmark">怎样在Django中使用Bootstrap样式？</a></h2>			<div class="entry-meta">
+				<span class="posted-on"><a href="http://www.crazyant.net/2990.html" title="上午 4:19" rel="bookmark"><time class="entry-date published" datetime="2022-11-27T04:19:29+00:00" itemprop="datePublished">2022-11-27</time></a></span> <span class="comments-link"><span class="xena-icon icon-comments"><svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M132.838 329.973a435.298 435.298 0 0 0 16.769-9.004c13.363-7.574 26.587-16.142 37.419-25.507 7.544.597 15.27.925 23.098.925 54.905 0 105.634-15.311 143.285-41.28 23.728-16.365 43.115-37.692 54.155-62.645 54.739 22.205 91.498 63.272 91.498 110.286 0 42.186-29.558 79.498-75.09 102.828 23.46 49.216 75.09 101.709 75.09 101.709s-115.837-38.35-154.424-78.46c-9.956 1.12-20.297 1.758-30.793 1.758-88.727 0-162.927-43.071-181.007-100.61z" fill-rule="nonzero"/>
+						<path d="M383.371 132.502c0 70.603-82.961 127.787-185.216 127.787-10.496 0-20.837-.639-30.793-1.757-38.587 40.093-154.424 78.429-154.424 78.429s51.63-52.472 75.09-101.67c-45.532-23.321-75.09-60.619-75.09-102.79C12.938 61.9 95.9 4.716 198.155 4.716 300.41 4.715 383.37 61.9 383.37 132.502z" fill-rule="nonzero" />
+					</svg></span><a href="http://www.crazyant.net/2990.html#respond">Leave a comment</a></span> <span class="byline">by <span class="author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope><a class="url fn n" href="http://www.crazyant.net/author/peishuai1987" title="View all posts by crazyant" rel="author" itemprop="url"><span class="author-name" itemprop="name">crazyant</span></a></span></span> 			</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		
+			<div class="entry-summary" itemprop="text">
+				<p>使用一个插件django-crispy-forms可以很好的完成样式对接 1、安装库 pip install  &#8230; <a title="怎样在Django中使用Bootstrap样式？" class="read-more" href="http://www.crazyant.net/2990.html">Read more <span class="screen-reader-text">怎样在Django中使用Bootstrap样式？</span></a></p>
+			</div><!-- .entry-summary -->
+
+					<hr class="xena-divider">
+				</div><!-- .inside-article -->
+</article><!-- #post-## -->
+<article id="post-2983" class="post-2983 post type-post status-publish format-standard hentry category-no-category" itemtype="https://schema.org/CreativeWork" itemscope>
+	<div class="inside-article">
+		
+		<header class="entry-header">
+					<div class="entry-meta">
+
+			<span class="cat-links"><span class="xena-icon icon-categories"><svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0 1 43.592 27.907l12.349 26.791A16 16 0 0 0 228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z" fill-rule="nonzero"/>
+					</svg></span><span class="screen-reader-text">Categories </span><a href="http://www.crazyant.net/category/no-category" rel="category tag">未分类</a></span> 		</div>
+		<h2 class="entry-title" itemprop="headline"><a href="http://www.crazyant.net/2983.html" rel="bookmark">【2022】Python环境安装与搭建</a></h2>			<div class="entry-meta">
+				<span class="posted-on"><a href="http://www.crazyant.net/2983.html" title="上午 9:12" rel="bookmark"><time class="updated" datetime="2022-11-25T10:05:54+00:00" itemprop="dateModified">2022-11-25</time><time class="entry-date published" datetime="2022-11-25T09:12:13+00:00" itemprop="datePublished">2022-11-25</time></a></span> <span class="comments-link"><span class="xena-icon icon-comments"><svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M132.838 329.973a435.298 435.298 0 0 0 16.769-9.004c13.363-7.574 26.587-16.142 37.419-25.507 7.544.597 15.27.925 23.098.925 54.905 0 105.634-15.311 143.285-41.28 23.728-16.365 43.115-37.692 54.155-62.645 54.739 22.205 91.498 63.272 91.498 110.286 0 42.186-29.558 79.498-75.09 102.828 23.46 49.216 75.09 101.709 75.09 101.709s-115.837-38.35-154.424-78.46c-9.956 1.12-20.297 1.758-30.793 1.758-88.727 0-162.927-43.071-181.007-100.61z" fill-rule="nonzero"/>
+						<path d="M383.371 132.502c0 70.603-82.961 127.787-185.216 127.787-10.496 0-20.837-.639-30.793-1.757-38.587 40.093-154.424 78.429-154.424 78.429s51.63-52.472 75.09-101.67c-45.532-23.321-75.09-60.619-75.09-102.79C12.938 61.9 95.9 4.716 198.155 4.716 300.41 4.715 383.37 61.9 383.37 132.502z" fill-rule="nonzero" />
+					</svg></span><a href="http://www.crazyant.net/2983.html#respond">Leave a comment</a></span> <span class="byline">by <span class="author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope><a class="url fn n" href="http://www.crazyant.net/author/peishuai1987" title="View all posts by crazyant" rel="author" itemprop="url"><span class="author-name" itemprop="name">crazyant</span></a></span></span> 			</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		
+			<div class="entry-summary" itemprop="text">
+				<p>包含如下5个步骤： PDF下载地址： PDF下载：Python环境安装指南 视频地址： https://www &#8230; <a title="【2022】Python环境安装与搭建" class="read-more" href="http://www.crazyant.net/2983.html">Read more <span class="screen-reader-text">【2022】Python环境安装与搭建</span></a></p>
+			</div><!-- .entry-summary -->
+
+					<hr class="xena-divider">
+				</div><!-- .inside-article -->
+</article><!-- #post-## -->
+<article id="post-2972" class="post-2972 post type-post status-publish format-standard hentry category-no-category" itemtype="https://schema.org/CreativeWork" itemscope>
+	<div class="inside-article">
+		
+		<header class="entry-header">
+					<div class="entry-meta">
+
+			<span class="cat-links"><span class="xena-icon icon-categories"><svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0 1 43.592 27.907l12.349 26.791A16 16 0 0 0 228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z" fill-rule="nonzero"/>
+					</svg></span><span class="screen-reader-text">Categories </span><a href="http://www.crazyant.net/category/no-category" rel="category tag">未分类</a></span> 		</div>
+		<h2 class="entry-title" itemprop="headline"><a href="http://www.crazyant.net/2972.html" rel="bookmark">Anaconda安装地址下载</a></h2>			<div class="entry-meta">
+				<span class="posted-on"><a href="http://www.crazyant.net/2972.html" title="上午 10:35" rel="bookmark"><time class="entry-date published" datetime="2022-11-12T10:35:55+00:00" itemprop="datePublished">2022-11-12</time></a></span> <span class="comments-link"><span class="xena-icon icon-comments"><svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M132.838 329.973a435.298 435.298 0 0 0 16.769-9.004c13.363-7.574 26.587-16.142 37.419-25.507 7.544.597 15.27.925 23.098.925 54.905 0 105.634-15.311 143.285-41.28 23.728-16.365 43.115-37.692 54.155-62.645 54.739 22.205 91.498 63.272 91.498 110.286 0 42.186-29.558 79.498-75.09 102.828 23.46 49.216 75.09 101.709 75.09 101.709s-115.837-38.35-154.424-78.46c-9.956 1.12-20.297 1.758-30.793 1.758-88.727 0-162.927-43.071-181.007-100.61z" fill-rule="nonzero"/>
+						<path d="M383.371 132.502c0 70.603-82.961 127.787-185.216 127.787-10.496 0-20.837-.639-30.793-1.757-38.587 40.093-154.424 78.429-154.424 78.429s51.63-52.472 75.09-101.67c-45.532-23.321-75.09-60.619-75.09-102.79C12.938 61.9 95.9 4.716 198.155 4.716 300.41 4.715 383.37 61.9 383.37 132.502z" fill-rule="nonzero" />
+					</svg></span><a href="http://www.crazyant.net/2972.html#respond">Leave a comment</a></span> <span class="byline">by <span class="author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope><a class="url fn n" href="http://www.crazyant.net/author/peishuai1987" title="View all posts by crazyant" rel="author" itemprop="url"><span class="author-name" itemprop="name">crazyant</span></a></span></span> 			</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		
+			<div class="entry-summary" itemprop="text">
+				<p>用国内的清华源下载很快 https://mirrors.tuna.tsinghua.edu.cn/anacon &#8230; <a title="Anaconda安装地址下载" class="read-more" href="http://www.crazyant.net/2972.html">Read more <span class="screen-reader-text">Anaconda安装地址下载</span></a></p>
+			</div><!-- .entry-summary -->
+
+					<hr class="xena-divider">
+				</div><!-- .inside-article -->
+</article><!-- #post-## -->
+<article id="post-2965" class="post-2965 post type-post status-publish format-standard hentry category-django" itemtype="https://schema.org/CreativeWork" itemscope>
+	<div class="inside-article">
+		
+		<header class="entry-header">
+					<div class="entry-meta">
+
+			<span class="cat-links"><span class="xena-icon icon-categories"><svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0 1 43.592 27.907l12.349 26.791A16 16 0 0 0 228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z" fill-rule="nonzero"/>
+					</svg></span><span class="screen-reader-text">Categories </span><a href="http://www.crazyant.net/category/django" rel="category tag">django</a></span> 		</div>
+		<h2 class="entry-title" itemprop="headline"><a href="http://www.crazyant.net/2965.html" rel="bookmark">Django开发常见问题解答</a></h2>			<div class="entry-meta">
+				<span class="posted-on"><a href="http://www.crazyant.net/2965.html" title="上午 2:58" rel="bookmark"><time class="updated" datetime="2022-11-08T03:34:49+00:00" itemprop="dateModified">2022-11-08</time><time class="entry-date published" datetime="2022-11-08T02:58:26+00:00" itemprop="datePublished">2022-11-08</time></a></span> <span class="comments-link"><span class="xena-icon icon-comments"><svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M132.838 329.973a435.298 435.298 0 0 0 16.769-9.004c13.363-7.574 26.587-16.142 37.419-25.507 7.544.597 15.27.925 23.098.925 54.905 0 105.634-15.311 143.285-41.28 23.728-16.365 43.115-37.692 54.155-62.645 54.739 22.205 91.498 63.272 91.498 110.286 0 42.186-29.558 79.498-75.09 102.828 23.46 49.216 75.09 101.709 75.09 101.709s-115.837-38.35-154.424-78.46c-9.956 1.12-20.297 1.758-30.793 1.758-88.727 0-162.927-43.071-181.007-100.61z" fill-rule="nonzero"/>
+						<path d="M383.371 132.502c0 70.603-82.961 127.787-185.216 127.787-10.496 0-20.837-.639-30.793-1.757-38.587 40.093-154.424 78.429-154.424 78.429s51.63-52.472 75.09-101.67c-45.532-23.321-75.09-60.619-75.09-102.79C12.938 61.9 95.9 4.716 198.155 4.716 300.41 4.715 383.37 61.9 383.37 132.502z" fill-rule="nonzero" />
+					</svg></span><a href="http://www.crazyant.net/2965.html#respond">Leave a comment</a></span> <span class="byline">by <span class="author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope><a class="url fn n" href="http://www.crazyant.net/author/peishuai1987" title="View all posts by crazyant" rel="author" itemprop="url"><span class="author-name" itemprop="name">crazyant</span></a></span></span> 			</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		
+			<div class="entry-summary" itemprop="text">
+				<p>怎样给ModelForm添加Bootstrap的form-control属性 Django的form默认是直接 &#8230; <a title="Django开发常见问题解答" class="read-more" href="http://www.crazyant.net/2965.html">Read more <span class="screen-reader-text">Django开发常见问题解答</span></a></p>
+			</div><!-- .entry-summary -->
+
+					<hr class="xena-divider">
+				</div><!-- .inside-article -->
+</article><!-- #post-## -->
+<article id="post-2942" class="post-2942 post type-post status-publish format-standard hentry category-no-category" itemtype="https://schema.org/CreativeWork" itemscope>
+	<div class="inside-article">
+		
+		<header class="entry-header">
+					<div class="entry-meta">
+
+			<span class="cat-links"><span class="xena-icon icon-categories"><svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0 1 43.592 27.907l12.349 26.791A16 16 0 0 0 228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z" fill-rule="nonzero"/>
+					</svg></span><span class="screen-reader-text">Categories </span><a href="http://www.crazyant.net/category/no-category" rel="category tag">未分类</a></span> 		</div>
+		<h2 class="entry-title" itemprop="headline"><a href="http://www.crazyant.net/2942.html" rel="bookmark">Python环境安装常见问题</a></h2>			<div class="entry-meta">
+				<span class="posted-on"><a href="http://www.crazyant.net/2942.html" title="上午 4:27" rel="bookmark"><time class="updated" datetime="2022-11-09T07:01:15+00:00" itemprop="dateModified">2022-11-09</time><time class="entry-date published" datetime="2022-10-16T04:27:37+00:00" itemprop="datePublished">2022-10-16</time></a></span> <span class="comments-link"><span class="xena-icon icon-comments"><svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M132.838 329.973a435.298 435.298 0 0 0 16.769-9.004c13.363-7.574 26.587-16.142 37.419-25.507 7.544.597 15.27.925 23.098.925 54.905 0 105.634-15.311 143.285-41.28 23.728-16.365 43.115-37.692 54.155-62.645 54.739 22.205 91.498 63.272 91.498 110.286 0 42.186-29.558 79.498-75.09 102.828 23.46 49.216 75.09 101.709 75.09 101.709s-115.837-38.35-154.424-78.46c-9.956 1.12-20.297 1.758-30.793 1.758-88.727 0-162.927-43.071-181.007-100.61z" fill-rule="nonzero"/>
+						<path d="M383.371 132.502c0 70.603-82.961 127.787-185.216 127.787-10.496 0-20.837-.639-30.793-1.757-38.587 40.093-154.424 78.429-154.424 78.429s51.63-52.472 75.09-101.67c-45.532-23.321-75.09-60.619-75.09-102.79C12.938 61.9 95.9 4.716 198.155 4.716 300.41 4.715 383.37 61.9 383.37 132.502z" fill-rule="nonzero" />
+					</svg></span><a href="http://www.crazyant.net/2942.html#respond">Leave a comment</a></span> <span class="byline">by <span class="author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope><a class="url fn n" href="http://www.crazyant.net/author/peishuai1987" title="View all posts by crazyant" rel="author" itemprop="url"><span class="author-name" itemprop="name">crazyant</span></a></span></span> 			</div><!-- .entry-meta -->
+					</header><!-- .entry-header -->
+
+		
+			<div class="entry-summary" itemprop="text">
+				<p>1、怎样安装一个包 打开cmd命令行，输入 pip install pandas -i http://mirr &#8230; <a title="Python环境安装常见问题" class="read-more" href="http://www.crazyant.net/2942.html">Read more <span class="screen-reader-text">Python环境安装常见问题</span></a></p>
+			</div><!-- .entry-summary -->
+
+					<hr class="xena-divider">
+				</div><!-- .inside-article -->
+</article><!-- #post-## -->
+		<nav id="nav-below" class="paging-navigation">
+			<span class="screen-reader-text">Post navigation</span>
+
+								<div class="nav-previous">
+						<span class="xena-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" fill-rule="nonzero"/>
+					</svg></span>						<span class="prev"
+							title="Previous"><a href="http://www.crazyant.net/page/2" >Older posts</a></span>
+					</div>
+					<div class="nav-links"><span aria-current="page" class="page-numbers current">1</span>
+<a class="page-numbers" href="http://www.crazyant.net/page/2">2</a>
+<span class="page-numbers dots">&hellip;</span>
+<a class="page-numbers" href="http://www.crazyant.net/page/41">41</a>
+<a class="next page-numbers" href="http://www.crazyant.net/page/2">Next &rarr;</a></div>		</nav><!-- #nav-below -->
+				</main><!-- #main -->
+	</div><!-- #primary -->
+
+	<div id="right-sidebar" class="widget-area grid-25 tablet-grid-25 grid-parent sidebar" itemtype="https://schema.org/WPSideBar" itemscope>
+	<div class="inside-right-sidebar">
+		<aside id="search-4" class="widget inner-padding widget_search"><form method="get" class="search-form" action="http://www.crazyant.net/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:">
+	</label>
+	<input type="submit" class="search-submit" value="Search">
+</form>
+</aside><aside id="tag_cloud-5" class="widget inner-padding widget_tag_cloud"><h2 class="widget-title">标签</h2><div class="tagcloud"><a href="http://www.crazyant.net/tag/ann" class="tag-cloud-link tag-link-269 tag-link-position-1" style="font-size: 8pt;" aria-label="ann (1个项目)">ann</a>
+<a href="http://www.crazyant.net/tag/apache" class="tag-cloud-link tag-link-233 tag-link-position-2" style="font-size: 9.6363636363636pt;" aria-label="apache (2个项目)">apache</a>
+<a href="http://www.crazyant.net/tag/c" class="tag-cloud-link tag-link-69 tag-link-position-3" style="font-size: 14.363636363636pt;" aria-label="c++ (9个项目)">c++</a>
+<a href="http://www.crazyant.net/tag/django" class="tag-cloud-link tag-link-118 tag-link-position-4" style="font-size: 13pt;" aria-label="django (6个项目)">django</a>
+<a href="http://www.crazyant.net/tag/excel" class="tag-cloud-link tag-link-230 tag-link-position-5" style="font-size: 11.636363636364pt;" aria-label="excel (4个项目)">excel</a>
+<a href="http://www.crazyant.net/tag/fckeditor" class="tag-cloud-link tag-link-239 tag-link-position-6" style="font-size: 8pt;" aria-label="fckeditor (1个项目)">fckeditor</a>
+<a href="http://www.crazyant.net/tag/flask" class="tag-cloud-link tag-link-210 tag-link-position-7" style="font-size: 10.727272727273pt;" aria-label="flask (3个项目)">flask</a>
+<a href="http://www.crazyant.net/tag/hadoop" class="tag-cloud-link tag-link-173 tag-link-position-8" style="font-size: 13pt;" aria-label="hadoop (6个项目)">hadoop</a>
+<a href="http://www.crazyant.net/tag/hive" class="tag-cloud-link tag-link-175 tag-link-position-9" style="font-size: 16pt;" aria-label="hive (14个项目)">hive</a>
+<a href="http://www.crazyant.net/tag/java" class="tag-cloud-link tag-link-20 tag-link-position-10" style="font-size: 18pt;" aria-label="java (24个项目)">java</a>
+<a href="http://www.crazyant.net/tag/javascript" class="tag-cloud-link tag-link-21 tag-link-position-11" style="font-size: 13pt;" aria-label="javascript (6个项目)">javascript</a>
+<a href="http://www.crazyant.net/tag/jquery" class="tag-cloud-link tag-link-48 tag-link-position-12" style="font-size: 9.6363636363636pt;" aria-label="jquery (2个项目)">jquery</a>
+<a href="http://www.crazyant.net/tag/jvm" class="tag-cloud-link tag-link-166 tag-link-position-13" style="font-size: 10.727272727273pt;" aria-label="jvm (3个项目)">jvm</a>
+<a href="http://www.crazyant.net/tag/linux" class="tag-cloud-link tag-link-59 tag-link-position-14" style="font-size: 13.909090909091pt;" aria-label="linux (8个项目)">linux</a>
+<a href="http://www.crazyant.net/tag/mac" class="tag-cloud-link tag-link-186 tag-link-position-15" style="font-size: 9.6363636363636pt;" aria-label="mac (2个项目)">mac</a>
+<a href="http://www.crazyant.net/tag/maven" class="tag-cloud-link tag-link-222 tag-link-position-16" style="font-size: 9.6363636363636pt;" aria-label="maven (2个项目)">maven</a>
+<a href="http://www.crazyant.net/tag/mybatis" class="tag-cloud-link tag-link-187 tag-link-position-17" style="font-size: 9.6363636363636pt;" aria-label="mybatis (2个项目)">mybatis</a>
+<a href="http://www.crazyant.net/tag/mysql" class="tag-cloud-link tag-link-169 tag-link-position-18" style="font-size: 18.272727272727pt;" aria-label="mysql (26个项目)">mysql</a>
+<a href="http://www.crazyant.net/tag/pandas" class="tag-cloud-link tag-link-244 tag-link-position-19" style="font-size: 18pt;" aria-label="pandas (24个项目)">pandas</a>
+<a href="http://www.crazyant.net/tag/php" class="tag-cloud-link tag-link-17 tag-link-position-20" style="font-size: 20.818181818182pt;" aria-label="php (50个项目)">php</a>
+<a href="http://www.crazyant.net/tag/python" class="tag-cloud-link tag-link-170 tag-link-position-21" style="font-size: 22pt;" aria-label="python (68个项目)">python</a>
+<a href="http://www.crazyant.net/tag/qt" class="tag-cloud-link tag-link-236 tag-link-position-22" style="font-size: 9.6363636363636pt;" aria-label="qt (2个项目)">qt</a>
+<a href="http://www.crazyant.net/tag/redis" class="tag-cloud-link tag-link-214 tag-link-position-23" style="font-size: 10.727272727273pt;" aria-label="redis (3个项目)">redis</a>
+<a href="http://www.crazyant.net/tag/seo" class="tag-cloud-link tag-link-110 tag-link-position-24" style="font-size: 9.6363636363636pt;" aria-label="seo (2个项目)">seo</a>
+<a href="http://www.crazyant.net/tag/shell" class="tag-cloud-link tag-link-174 tag-link-position-25" style="font-size: 13.454545454545pt;" aria-label="shell (7个项目)">shell</a>
+<a href="http://www.crazyant.net/tag/spark" class="tag-cloud-link tag-link-198 tag-link-position-26" style="font-size: 11.636363636364pt;" aria-label="spark (4个项目)">spark</a>
+<a href="http://www.crazyant.net/tag/svn" class="tag-cloud-link tag-link-122 tag-link-position-27" style="font-size: 9.6363636363636pt;" aria-label="svn (2个项目)">svn</a>
+<a href="http://www.crazyant.net/tag/tensorflow" class="tag-cloud-link tag-link-199 tag-link-position-28" style="font-size: 10.727272727273pt;" aria-label="tensorflow (3个项目)">tensorflow</a>
+<a href="http://www.crazyant.net/tag/tomcat" class="tag-cloud-link tag-link-213 tag-link-position-29" style="font-size: 9.6363636363636pt;" aria-label="tomcat (2个项目)">tomcat</a>
+<a href="http://www.crazyant.net/tag/ubuntu" class="tag-cloud-link tag-link-55 tag-link-position-30" style="font-size: 13pt;" aria-label="ubuntu (6个项目)">ubuntu</a>
+<a href="http://www.crazyant.net/tag/win7" class="tag-cloud-link tag-link-226 tag-link-position-31" style="font-size: 12.363636363636pt;" aria-label="win7 (5个项目)">win7</a>
+<a href="http://www.crazyant.net/tag/word" class="tag-cloud-link tag-link-229 tag-link-position-32" style="font-size: 9.6363636363636pt;" aria-label="word (2个项目)">word</a>
+<a href="http://www.crazyant.net/tag/wordpress" class="tag-cloud-link tag-link-171 tag-link-position-33" style="font-size: 10.727272727273pt;" aria-label="wordpress (3个项目)">wordpress</a>
+<a href="http://www.crazyant.net/tag/%e5%a4%a7%e6%95%b0%e6%8d%ae" class="tag-cloud-link tag-link-207 tag-link-position-34" style="font-size: 10.727272727273pt;" aria-label="大数据 (3个项目)">大数据</a>
+<a href="http://www.crazyant.net/tag/%e6%8e%a8%e8%8d%90%e7%b3%bb%e7%bb%9f" class="tag-cloud-link tag-link-204 tag-link-position-35" style="font-size: 13pt;" aria-label="推荐系统 (6个项目)">推荐系统</a>
+<a href="http://www.crazyant.net/tag/%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f" class="tag-cloud-link tag-link-238 tag-link-position-36" style="font-size: 9.6363636363636pt;" aria-label="操作系统 (2个项目)">操作系统</a>
+<a href="http://www.crazyant.net/tag/%e6%95%b0%e6%8d%ae%e5%88%86%e6%9e%90" class="tag-cloud-link tag-link-256 tag-link-position-37" style="font-size: 16.727272727273pt;" aria-label="数据分析 (17个项目)">数据分析</a>
+<a href="http://www.crazyant.net/tag/%e6%95%b0%e6%8d%ae%e5%ba%93" class="tag-cloud-link tag-link-23 tag-link-position-38" style="font-size: 11.636363636364pt;" aria-label="数据库 (4个项目)">数据库</a>
+<a href="http://www.crazyant.net/tag/%e6%9c%ba%e5%99%a8%e5%ad%a6%e4%b9%a0" class="tag-cloud-link tag-link-215 tag-link-position-39" style="font-size: 11.636363636364pt;" aria-label="机器学习 (4个项目)">机器学习</a>
+<a href="http://www.crazyant.net/tag/%e7%88%ac%e8%99%ab" class="tag-cloud-link tag-link-189 tag-link-position-40" style="font-size: 16pt;" aria-label="爬虫 (14个项目)">爬虫</a>
+<a href="http://www.crazyant.net/tag/%e7%a8%8b%e5%ba%8f%e4%ba%ba%e7%94%9f" class="tag-cloud-link tag-link-206 tag-link-position-41" style="font-size: 17.454545454545pt;" aria-label="程序人生 (21个项目)">程序人生</a>
+<a href="http://www.crazyant.net/tag/website" class="tag-cloud-link tag-link-172 tag-link-position-42" style="font-size: 10.727272727273pt;" aria-label="站长 (3个项目)">站长</a>
+<a href="http://www.crazyant.net/tag/%e7%ae%97%e6%b3%95" class="tag-cloud-link tag-link-208 tag-link-position-43" style="font-size: 10.727272727273pt;" aria-label="算法 (3个项目)">算法</a>
+<a href="http://www.crazyant.net/tag/%e7%bb%87%e6%a2%a6" class="tag-cloud-link tag-link-130 tag-link-position-44" style="font-size: 11.636363636364pt;" aria-label="织梦 (4个项目)">织梦</a>
+<a href="http://www.crazyant.net/tag/%e8%ae%be%e8%ae%a1" class="tag-cloud-link tag-link-159 tag-link-position-45" style="font-size: 9.6363636363636pt;" aria-label="设计 (2个项目)">设计</a></div>
+</aside>
+		<aside id="recent-posts-9" class="widget inner-padding widget_recent_entries">
+		<h2 class="widget-title">近期文章</h2>
+		<ul>
+											<li>
+					<a href="http://www.crazyant.net/3013.html">Vscode怎样配置，实现Flask服务的启动和调试</a>
+									</li>
+											<li>
+					<a href="http://www.crazyant.net/3002.html">Django结合Pandas实现CSV文件下载</a>
+									</li>
+											<li>
+					<a href="http://www.crazyant.net/2998.html">Pandas读取Excel是怎样指定列的类型为字符串</a>
+									</li>
+											<li>
+					<a href="http://www.crazyant.net/2990.html">怎样在Django中使用Bootstrap样式？</a>
+									</li>
+											<li>
+					<a href="http://www.crazyant.net/2983.html">【2022】Python环境安装与搭建</a>
+									</li>
+					</ul>
+
+		</aside><aside id="text-11" class="widget inner-padding widget_text"><h2 class="widget-title">分享文章</h2>			<div class="textwidget"><div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></div>
+		</aside>	</div><!-- .inside-right-sidebar -->
+</div><!-- #secondary -->
+
+	</div><!-- #content -->
+</div><!-- #page -->
+
+
+<div class="site-footer">
+			<footer class="site-info" itemtype="https://schema.org/WPFooter" itemscope>
+			<div class="inside-site-info 
+							grid-container grid-parent">
+								<div class="copyright-bar">
+					<span class="copyright">&copy; 2023 蚂蚁学Python</span> &bull; Theme <a href="https://wpkind.com/" itemprop="url">Xena</a>				</div>
+			</div>
+		</footer><!-- .site-info -->
+			
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4c9637db87f741d7588ff42a2a9c057d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+	
+</div><!-- .site-footer -->
+
+<script src='//cdn.bibblio.org/rcm/4.6/bib-related-content.js?ver=6.1.1' id='bibblio-rcm-js-js'></script>
+<script id='toc-front-js-extra'>
+var tocplus = {"visibility_show":"show","visibility_hide":"hide","width":"Auto"};
+</script>
+<script src='http://www.crazyant.net/wp-content/plugins/table-of-contents-plus/front.min.js?ver=2212' id='toc-front-js'></script>
+<!--[if lte IE 11]>
+<script src='http://www.crazyant.net/wp-content/themes/xena/js/classList.min.js?ver=1.0.6' id='xena-classlist-js'></script>
+<![endif]-->
+<script src='http://www.crazyant.net/wp-content/themes/xena/js/menu.min.js?ver=1.0.6' id='xena-menu-js'></script>
+<script src='http://www.crazyant.net/wp-content/themes/xena/js/a11y.min.js?ver=1.0.6' id='xena-a11y-js'></script>
+<script src='http://www.crazyant.net/wp-content/plugins/easy-fancybox/fancybox/1.5.4/jquery.fancybox.min.js?ver=6.1.1' id='jquery-fancybox-js'></script>
+<script id='jquery-fancybox-js-after'>
+var fb_timeout, fb_opts={'overlayShow':true,'hideOnOverlayClick':true,'showCloseButton':true,'margin':20,'enableEscapeButton':true,'autoScale':true };
+if(typeof easy_fancybox_handler==='undefined'){
+var easy_fancybox_handler=function(){
+jQuery([".nolightbox","a.wp-block-fileesc_html__button","a.pin-it-button","a[href*='pinterest.com\/pin\/create']","a[href*='facebook.com\/share']","a[href*='twitter.com\/share']"].join(',')).addClass('nofancybox');
+jQuery('a.fancybox-close').on('click',function(e){e.preventDefault();jQuery.fancybox.close()});
+/* IMG */
+var fb_IMG_select=jQuery('a[href*=".jpg" i]:not(.nofancybox,li.nofancybox>a),area[href*=".jpg" i]:not(.nofancybox),a[href*=".png" i]:not(.nofancybox,li.nofancybox>a),area[href*=".png" i]:not(.nofancybox),a[href*=".webp" i]:not(.nofancybox,li.nofancybox>a),area[href*=".webp" i]:not(.nofancybox)');
+fb_IMG_select.addClass('fancybox image');
+var fb_IMG_sections=jQuery('.gallery,.wp-block-gallery,.tiled-gallery,.wp-block-jetpack-tiled-gallery');
+fb_IMG_sections.each(function(){jQuery(this).find(fb_IMG_select).attr('rel','gallery-'+fb_IMG_sections.index(this));});
+jQuery('a.fancybox,area.fancybox,.fancybox>a').each(function(){jQuery(this).fancybox(jQuery.extend(true,{},fb_opts,{'transitionIn':'elastic','transitionOut':'elastic','opacity':false,'hideOnContentClick':false,'titleShow':true,'titlePosition':'over','titleFromAlt':true,'showNavArrows':true,'enableKeyboardNav':true,'cyclic':false}))});
+};};
+var easy_fancybox_auto=function(){setTimeout(function(){jQuery('a#fancybox-auto,#fancybox-auto>a').first().trigger('click')},1000);};
+jQuery(easy_fancybox_handler);jQuery(document).on('post-load',easy_fancybox_handler);
+jQuery(easy_fancybox_auto);
+</script>
+<script src='http://www.crazyant.net/wp-content/plugins/easy-fancybox/vendor/jquery.easing.min.js?ver=1.4.1' id='jquery-easing-js'></script>
+<script src='http://www.crazyant.net/wp-content/plugins/easy-fancybox/vendor/jquery.mousewheel.min.js?ver=3.1.13' id='jquery-mousewheel-js'></script>
+<script src='http://www.crazyant.net/wp-content/plugins/wp-githuber-md/assets/vendor/prism/components/prism-core.min.js?ver=1.23.0' id='prism-js-0-js'></script>
+<script src='http://www.crazyant.net/wp-content/plugins/wp-githuber-md/assets/vendor/prism/prism.min.js?ver=1.23.0' id='prism-js-1-js'></script>
+<script src='http://www.crazyant.net/wp-content/plugins/wp-githuber-md/assets/vendor/prism/plugins/autoloader/prism-autoloader.min.js?ver=1.23.0' id='prism-js-2-js'></script>
+  <script id="auto_loader_config_scripts"> Prism.plugins.autoloader.languages_path = "http://www.crazyant.net/wp-content/plugins/wp-githuber-md/assets/vendor/prism/components/"; </script> <script>!function(){window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[],advanced_ads_ready_queue.push=window.advanced_ads_ready;for(var d=0,a=advanced_ads_ready_queue.length;d<a;d++)advanced_ads_ready(advanced_ads_ready_queue[d])}();</script>
+</body>
+</html>
